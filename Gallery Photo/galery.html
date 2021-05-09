@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" type="text/css" href="img/favicon.png">   
+    <link rel="stylesheet" href="scss/bootstrap.css">        
+    <link rel="stylesheet" href="scss/galery.css">    
+    <link rel="stylesheet" href="scss/navigated.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>d'sign Never Die</title>
+</head>
+<body>   
+    
+    <header>
+        <div class="logo">                
+        </div>    
+        
+        <ul class="nav-wrap">            
+            <li>
+                <a class="nav-btn" href="home.html" name="H">HOme</a>
+            </li>
+            <li>
+                <a class="nav-btn current" onclick="setCurrent()" href="galery.html" name="G">GAlery</a>
+            </li>
+            <li>
+                <a class="nav-btn" onclick="setCurrent()" href="portfolio.html" name="P">POrtfolio</a>
+            </li>
+            <li>
+                <a class="nav-btn" onclick="setCurrent()" href="contact.html" name="C">COntact</a>
+            </li>
+        </ul>   
+        
+        <div class="search-bd">
+            <input type="name" placeholder="Search....."></input>                              
+            <button class="search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <!-- send email -->
+        <div class="acount">                   
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="far fa-envelope"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <button class="box"></button>
+        </div> 
+    </header>
+
+    <main>
+        <!-- search bar -->
+       <div class="img-bg">                  
+            <section class="head">                            
+                <!-- title page -->
+                <div class="title row">
+                    <div class="col"  data-aos="fade-right">
+                        <h1>Ga</h1>
+                    </div>
+                    <div class="col ml-4" data-aos="fade-left">
+                        <h1>ery</h1>
+                    </div>
+                </div>            
+
+                <!-- symbol page -->
+                <div class="poly-bg mt-3">
+                    <div class="triagle fadeColor">
+                        <img src="img/art.jpg" width="200%">
+                    </div>
+                    <div class="triagle fadeColor">
+                        <img src="img/abstract1.jpg" width="200%">
+                    </div>
+                    <div class="triagle fadeColor">
+                        <img src="img/abstract2.jpg" width="200%">
+                    </div>
+                    <div class="triagle fadeColor">
+                        <img src="img/line.jpg" width="200%">
+                    </div>
+                    <div class="triagle fadeColor">
+                        <img src="img/line.jpg" width="200%">
+                    </div>
+                    <div class="triagle fadeColor">
+                        <img src="img/line.jpg" width="200%">
+                    </div>
+                    <div class="triagle fadeColor">
+                        <img src="img/line.jpg" width="200%">                
+                    </div>
+                    <div class="triagle fadeColor">
+                        <img src="img/line.jpg" width="200%">
+                    </div>
+                </div>                                               
+
+                <!-- auto scroll page down -->
+                <button class="small-box">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </button>
+            </section> 
+        </div>
+       <!-- main -->
+       <section class="circle-cover p-5">
+           <!-- content page -->
+            <!-- <div class="first-galery">
+                <h2>Abstract</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis voluptates eveniet impedit ea autem molestias quod possimus velit, eos qui amet recusandae deleniti, sit quae ipsa at dignissimos consequuntur.</p>
+            </div> -->
+           
+            <!-- first galery -->
+           <span class="rectagle"></span>
+           <span class="rectagle"></span>
+           <span class="rectagle"></span>
+           <span class="circle"></span>           
+           
+           <!-- abstract orientation -->
+            <div class="row">                        
+                <div class="shape-1">
+                    <img src="img/substract.jpg" alt="" >                
+                    <img src="img/abstract.jpg" alt="" style="width:200px">                                                                
+                </div>                
+                <div class="col"></div>     
+            </div>
+
+            <div class="row">
+                <div class="col"></div>                     
+                <div class="shape-2">
+                    <img src="img/abstract.jpg" alt="">                
+                    <img src="img/substract.jpg" alt="" style="width:246px; transform:rotate(90deg); margin-top:-250px">                
+                </div>
+                
+            </div>
+            <div class="row">                
+                <div class="shape-3">
+                    <img src="img/crack.jpg" alt="" style="width:39%;">                
+                    <img src="img/art.jpg" style="margin-top:-160px; margin-left:50px; width:50%; transform:rotate(-30deg); opacity:.3;">                
+                </div>
+                
+                <div class="col"></div>     
+            </div>
+            <div class="row">
+                <div class="col"></div>                 
+                <div class="shape-4">
+                    <img src="img/abstract.jpg" style="width:200px; transform:rotate(90deg); margin-top:-100px; opacity: .3;">                                                                
+                    <img src="img/crack.jpg" style="width:62%">                    
+                </div>
+                
+            </div>
+            <div class="row">                
+                <div class="shape-5">
+                    <img src="img/art.jpg" style="margin-top:-100px; opacity: .5">                
+                    <img src="img/crack.jpg" style="width:30%">                    
+                    <img src="img/abstract.jpg" style="width:200px; transform:rotate(-90deg); margin-top:-180px;">                                                                
+                </div>
+                
+                <div class="col"></div> 
+            </div>            
+           <div class="row">
+                <div class="col"></div>                     
+                <div class="shape-6">
+                    <img src="img/art.jpg">                
+                    <img src="img/line.jpg">
+                    <img src="img/art.jpg" style="opacity: .5">                
+                </div>
+                
+           </div>
+           <div class="row">               
+            <div class="shape-7">
+                <img src="img/substract.jpg" alt="">                              
+                <img src="img/abstract.jpg" style="width:200px; transform:rotate(-90deg); margin-top:-180px; opacity:.5">                                                                
+            </div>    
+            
+                <div class="col"></div>     
+           </div>
+           <div class="row">
+                <div class="col"></div>                     
+                <div class="shape-8">
+                    <img src="img/abstract.jpg" style="width:200px; transform:rotate(90deg); margin-top:-100px; opacity:.6; margin-left:70px">                                                                
+                    <img src="img/substract.jpg" style="width:43%">                           
+                </div>
+                
+           </div>
+           <div class="row">               
+            <div class="shape-9">
+                <img src="img/line.jpg" style="width:40%; margin-top:20px">               
+                <img src="img/crack.jpg" style="width:30%">                    
+            </div>    
+            
+               <div class="col"></div> 
+           </div>
+           <div class="row">
+                <div class="col"></div>                 
+                <div class="shape-10">
+                    <img src="img/line.jpg" alt="">                
+                </div>                
+           </div>                                        
+        </section>    
+
+    <!-- asimetrict orientation -->
+    <div class="hex-cover my-5">                
+        <div class="hex">
+            <img src="img/pink.jpg" width="400px;">            
+            <div class="square"></div>
+            <div class="square"></div>            
+        </div>
+        <div class="hex">            
+            <div class="square"><img src="img/Dog.jpg"></div>
+            <div class="square"><img src="img/Dog.jpg"></div>            
+        </div>        
+        <div class="hex">            
+            <div class="rhombus">
+                <img src="img/ghoose.jpg">
+            </div>
+            <div class="square"></div>            
+            <div class="square"><img src="img/ghoose.jpg"></div>                                
+        </div>        
+        <div class="hex">
+            <img src="img/yellow leaf.jpg" width="100px" height="230px" style="opacity:1">            
+            <div class="square"></div>
+            <div class="square"></div>            
+        </div>  
+        <div class="hex">
+            <div class="inside"></div>          
+        </div>                      
+        <div class="hex">
+            <div class="inside"></div>          
+        </div>              
+        <div class="hex"></div>              
+        <div class="hex"></div>      
+        <div class="hex"></div>      
+
+        <div class="segi-1">
+                <img src="img/substract.jpg">                           
+        </div>
+        <div class="segi-2"></div>
+        <div class="segi-3">
+            <img src="img/abstract2.jpg" alt="">
+        </div>
+        <div class="segi-4">
+            <img src="img/geometric.jpg" alt="">
+        </div>                
+        
+    </div>       
+    </main>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/navigated.js"></script>    
+    <script src="js/galery.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in',                                        
+        delay:3000        
+    });
+</script>
+</body>
+</html>
