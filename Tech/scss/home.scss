@@ -1,0 +1,529 @@
+body{
+    overflow-x: hidden;
+    background: #E0E1E3;
+}
+
+// @keyframes disp{
+//     0%{
+//         width: 100%;
+//         height: 100vh;
+//     }
+//     50%{
+//         width: 50%;
+//         height: 80vh;
+//     }
+//     75%{
+//         width: 30%;
+//         height: 50vh;
+//     }
+//     100%{
+//         width: 12%;
+//         height: 13vh;
+//     }
+// }
+// .opening{
+//     position: fixed;
+//     width: 100%;
+//     height: 100vh;          
+//     z-index: 100;    
+//     overflow:hidden;    
+//     animation: disp 2.5s ease-out 6s;
+//     animation-fill-mode: forwards;    
+//     cursor: pointer;
+
+//     .bg-1{
+//         background: #18212D;
+//         width: 50%;
+//         height: 100vh;       
+//         position: relative;        
+//         float: left;           
+        
+//         &::before{
+//             content: '';
+//             background: #18212D;
+//             position: absolute;
+//             z-index: 2;
+//             top: 60px;
+//             left: 55px;
+//             width: 20px;
+//             height: 10px;            
+//             transform: rotate(45deg);
+//         }
+//     }    
+
+//     .bg-2{
+//         position: relative;
+//         background: #E0E1E3;
+//         width: 50%;
+//         height: 100vh;
+//         float: left;
+//         animation: fadeRight  1.5s ease-in 5s;                       
+//         animation-fill-mode: forwards;
+//     }    
+    
+//     @keyframes fadeRight{
+//         from{
+//             width: 50%;                                    
+//         }
+//         to{
+//             width: 0;            
+//         }
+//     }
+
+//     .logo{              
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;             
+//         transform: translate(-50%,-50%);      
+//         animation: smalling 2s ease-out 5s;        
+//         animation-fill-mode: forwards;       
+
+//         @keyframes play240 {
+//             0% {
+//               background-position: 0px 0px;                   
+//             }
+          
+//             100% {
+//               background-position: -108000px 0px;                       
+//             }
+//           }
+//           .shapeshifter {               
+//             width: 450px;
+//             height: 450px;                      
+//             background-repeat: no-repeat;            
+//             animation-duration: 10000ms;          
+//             animation-timing-function: steps(240);
+//             background-position:  -108000px 0px; 
+//             animation-fill-mode: forwards;
+//           }
+
+//           .shapeshifter.play {
+//             animation-name: play240;            
+//           }          
+
+//         .title{
+//             margin-top: -40px;
+//             margin-left: -10px;
+//             color: white;
+//             word-spacing: 10px;
+//             text-align: center;
+//             font: {size: 30px; weight:700};
+//         }
+//     }  
+    
+    
+//     @keyframes smalling{
+//         0%{            
+//             left: 50%;            
+//         }  
+//         50%{
+//             left: 30%;
+//         }      
+//         100%{            
+//             left: 24%;            
+//         }
+//     }
+// }
+
+.m-contain{
+    max-width:1620px;    
+}
+
+.head-carousel{
+    overflow: hidden;        
+    margin-bottom: 20vh;
+    margin-left: -15px;
+    width: 104%;
+    color: #c5e7f1;
+}
+
+.bg-carousel{         
+    background: linear-gradient(100deg, #37caec, #add9db );
+          
+    &::before{
+        content: '';
+        position: absolute;        
+        background: #C6BAD8;
+        z-index: 1;
+        width: 0;
+        left: 0;
+        height: 100%;
+        animation: title-fade 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.8s forwards;        
+    }   
+}
+
+.quote{
+    list-style: none;
+    font-size: 50px;    
+    position: absolute;            
+    writing-mode: vertical-lr;
+    overflow: hidden;
+    width: 85px;       
+    height: 200vh;        
+    margin: 0;         
+
+    li{
+        margin: 30px 15px;                
+        float: left;        
+    }
+}
+
+.bg-title{
+  
+
+    &::before{
+        content: '';
+        background: #36447F;
+        position: absolute;        
+        width: 0;
+        height: 100%;                        
+        animation: title-fade .9s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.8s forwards;
+        animation-direction: reverse;        
+    }
+}
+
+@keyframes title-fade{
+    0%{
+        width: 0;
+        left: 0;
+    }
+    50%{        
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+.no-carousel{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;                
+    font: {family: Agency FB; size:3em; weight: 700};                    
+}
+.padd{
+    margin-left:-80px;
+}
+
+.title-color{
+    position: absolute;
+    top: 1%;
+    left: 4%;    
+    list-style:none;    
+    font: {size:4em; weight:300};
+
+    p{        
+        width: 280px;    
+        font-size: 15px;
+        position: absolute;        
+        top: 35%;
+        left: 71%;
+    } 
+
+    .txt-bottom{
+        margin-left: 90px; 
+        margin-top: -30px;
+    }
+}
+
+.m-btn{
+    margin-left:-17.61em;
+    width:20em;
+    border-radius:0;
+    border:none;
+    
+    &:hover{
+        background: #ff8195;
+    }
+}
+
+.bg, .step-bg{    
+    justify-content: center;
+    align-items: center;    
+    display: flex;    
+}
+
+.next-bg{  
+    margin-left: 60vh;
+    margin-top:80px;     
+    height:20px;
+    z-index:99;             
+}
+
+.bg{
+    position:absolute;
+    background:linear-gradient(-60deg,#125488, #37caec);                   
+    width:390px;
+    height:250px;                                           
+    top:65vh;
+    left: 46.1%;                            
+    z-index: 99;
+    overflow: hidden;    
+}
+
+.step-bg{
+    height: 40px;
+    width: 500px;    
+    position: absolute;
+    bottom: -18vh;    
+    left: 26%;                    
+    z-index: 10;
+}
+
+$pos:20;
+%mid{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);              
+}
+
+%btn{
+    position: absolute;
+    display: inline-block;                
+    width: 16px;
+    height: 16px;
+    line-height: 12px;
+    text-align: center;
+    top: -3vh;                
+    border-radius: 50%;
+    font: {weight:500; size:12px};                
+    color: #E0E1E3;
+}
+
+#wrap {
+    width: 1366px;    
+    top: 6%;
+    margin-top: 52px;
+    margin-left: -15px;
+    position: relative;    
+}
+
+#showcase {        
+    width: 85%;
+    height: 650px;
+    float: left;            
+}
+
+#showcase img {
+    cursor: pointer;
+    opacity:0.2;     
+    width: 35%;   
+    transition: opacity .8s ease; 
+}
+
+%line{
+    content: '';
+    position: absolute;
+    height: 540px;
+    background: black;
+    width: 5px;        
+}
+
+.nav{
+    position:relative;                    
+    
+    .left, .right{
+        position: absolute;
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        // justify-content: center;
+        // align-items: center;
+        background: none;
+    }
+}
+
+#item-title {  
+    color: #212e53;  
+    width: 40%;        
+    margin-left: 280px;    
+    font-size: 13px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    margin-top: -80px;    
+    font-family: monospace;
+
+    h3{        
+        font: {size: 20px; weight: bold};
+    }  
+}
+        
+    .code-product{
+        font: {family:Agency FB; size: 120px; weight:bold};  
+        position: relative;               
+        width: 150px;              
+        overflow: hidden;
+        margin-top: -80px;        
+        color: #212e53;
+    
+        .no{                      
+            width: 190vh;                           
+            list-style: none;   
+            position: absolute;                             
+            left: 42px;
+            transition: left .4s ease-in;
+
+            li{        
+                float: left;
+                transform: rotate(-90deg);
+                margin-right: 110px;                                          
+            }                   
+        }    
+
+        .nol{            
+            position: relative;            
+            margin-top: 70px;
+            margin-left: 37px;            
+            list-style: none;             
+            transform: rotate(-90deg);       
+        }
+    
+        %prop{
+            float: left;
+            margin-left: 8px;        
+        }
+    
+        .box-wrap{       
+            position: relative;
+            margin-top:-70px; 
+            width: 200px;
+            padding-left: 65px;                  
+    
+            .box-3{
+               @extend %prop;
+               width: 20px;
+               height: 280px;
+               background: #C6BAD8;           
+            }
+            .box-4{
+                @extend %prop;   
+                width: 8px;         
+                height: 200px;            
+                border: 2px solid #AB3636;
+            }
+        }
+    }
+    
+    .body-card{
+        width:100%;
+        height:20vh;
+        display: flex;        
+
+        .spell{
+            display: none;
+        }       
+
+        .sample-bg{
+            width: 180px;    
+            height: 200px;    
+            @extend %mid;
+            border-radius:20px;         
+            box-shadow: grey -7px 5px 0 1px, grey -11px 10px 0 0;
+            transform: rotateX(60deg) rotate(-25deg) rotateY(6deg) skew(30deg);        
+        
+            img{
+                width: 50%;                  
+                @extend %mid;
+            }    
+        }
+        
+        .capt-bg{
+            @extend %mid;    
+            z-index:-1;
+            width: 180px;    
+            height: 200px;    
+            transform: rotateX(60deg) rotate(-25deg) rotateY(6deg) skew(30deg);
+        }
+    }
+            
+
+$x:20px;
+$y:20vh;
+$Z:100%;
+    
+%obj{
+    content: '';
+    position: absolute;        
+    right: -3px;    
+}
+
+.print-obj{
+    position:absolute;
+    right: 0;    
+    border: 10px solid #B53535;
+    border-right: none;
+    width: $x*9;
+    height: $x*22;
+
+    &::before{       
+        @extend %obj; 
+        z-index: 1;
+        background: #16D3A9;
+        opacity: 0.78;
+        right: $x*2+8;        
+        top: $x*3;
+        width: $x*4;
+        height: $x*16;
+    }
+
+    &::after{        
+        @extend %obj;
+        z-index: 1;
+        background: #343C50;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: $x*3;
+        height: $x*18;        
+        top: $x*2;
+        right:0;    
+    }
+
+    img{
+        margin:17px 0; 
+        height: 96%;
+        transform:rotate(-90deg);        
+        position: absolute;            
+        transition: left 1s ease-in-out;
+
+        $sizes: (1:200px, 2:215px, 3:230px, 4:245px, 5:270px);                    
+        @each $no, $size in $sizes{            
+            &:nth-child(#{$no}){                             
+                width: $size;               
+            }                                        
+        }         
+
+        // (1:-25px, 2:-5px, 3:15px, 4:35px, 5:55px)
+        $range: (1:-20px, 2: 200px, 3:220px, 4:240px, 5:260px);                    
+        @each $list, $l in $range{            
+            &:nth-child(#{$list}){                             
+                left: $l;               
+            }                                        
+        }         
+    }    
+}    
+
+.btn-bg{
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+
+    #plus, #minus{
+        position: relative;
+        display: inline-block;
+        line-height: 38px;        
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 4px solid black;
+        text-align: center;
+        font: {size:30px; weight:bold};
+    }
+    #plus{
+        margin-right:15px;
+    }
+}
