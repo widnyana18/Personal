@@ -1,0 +1,124 @@
+$object:(
+	p:25px,
+	milk:#f4f2ec,
+	f-size:14px
+);
+@function val($key){
+	@return map-get($object , $key)	
+}
+
+%box{
+	border-radius:40px;
+	background:black;
+	border:none;
+	color:val(milk);
+	transition:.8s;
+	font: {size:val(f-size); weight:bold};
+	}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+
+	header{
+		max-width: 910px;
+
+		section.bg-head{
+			background:val(milk);
+			display:inline-block;
+			position:fixed;
+			width:100%;
+
+			.menu-list{							
+				ul{
+					list-style-type: none;
+					
+					li{	
+						a{
+							text-decoration:none;
+							color:#000;
+							float:right;
+							padding:val(p) val(p)+8;				
+							font: {size:val(f-size); weight:bold};
+							transition:1s;
+
+							&:hover{
+								color:#be2623;
+							}
+						}
+						.logo{
+							float:left;
+							font-size:val(f-size)+4;
+						}
+					}						
+				}				
+			}
+		}	
+
+		section.bg-body{			
+			background: {image:url("../image/bg.jpg"); repeat:no-repeat; position:center; size:cover; attachment:fixed};
+			width:205.4vh;
+			height:100vh;
+
+			.body-text{
+				padding:12em 8em;
+				color:white;
+				text-align:center;
+
+				 h1{
+					font: {size:6em; weight:900};
+				}
+				p{
+					padding:0 16em;
+					font-size:val(f-size);
+				}
+				.btn{
+					@extend %box;
+					padding: val(f-size) val(p);
+					margin:val(p)*2 0;
+
+					&:hover{
+						background:val(milk);
+						color:black;
+					}
+				}
+			}
+		}	
+	}
+	main{
+		display:grid;
+		grid-template-columns: 50% auto;
+		grid-template-areas: "capt img";
+		
+		.main-text{
+			grid-area:capt;
+			align-self:center;
+
+			h2{
+				font: {size:val(p)*2; weight:bold};
+				padding:val(p) 0 val(p) val(p);
+			}
+			p{
+				padding:val(p);
+				padding-left:val(p)*4;
+			
+			}
+			.btn{
+				@extend %box;
+				padding:val(f-size) val(p)*4;
+				margin:val(p)*2 0 0 val(p)*6;
+				 
+			}
+		}
+		.main-img{
+			grid-area: img;
+			height:35em;
+		}
+	}
+}	
+
+

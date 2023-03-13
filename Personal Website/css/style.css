@@ -1,0 +1,131 @@
+body header section.bg-body .body-text .btn, body main .main-text .btn {
+  border-radius: 40px;
+  background: black;
+  border: none;
+  color: #f4f2ec;
+  -webkit-transition: .8s;
+  transition: .8s;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body header {
+  max-width: 910px;
+}
+
+body header section.bg-head {
+  background: #f4f2ec;
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+}
+
+body header section.bg-head .menu-list ul {
+  list-style-type: none;
+}
+
+body header section.bg-head .menu-list ul li a {
+  text-decoration: none;
+  color: #000;
+  float: right;
+  padding: 25px 33px;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body header section.bg-head .menu-list ul li a:hover {
+  color: #be2623;
+}
+
+body header section.bg-head .menu-list ul li .logo {
+  float: left;
+  font-size: 18px;
+}
+
+body header section.bg-body {
+  background-image: url("../image/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 205.4vh;
+  height: 100vh;
+}
+
+body header section.bg-body .body-text {
+  padding: 12em 8em;
+  color: white;
+  text-align: center;
+}
+
+body header section.bg-body .body-text h1 {
+  font-size: 6em;
+  font-weight: 900;
+}
+
+body header section.bg-body .body-text p {
+  padding: 0 16em;
+  font-size: 14px;
+}
+
+body header section.bg-body .body-text .btn {
+  padding: 14px 25px;
+  margin: 50px 0;
+}
+
+body header section.bg-body .body-text .btn:hover {
+  background: #f4f2ec;
+  color: black;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+      grid-template-areas: "capt img";
+}
+
+body main .main-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: capt;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body main .main-text h2 {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 25px 0 25px 25px;
+}
+
+body main .main-text p {
+  padding: 25px;
+  padding-left: 100px;
+}
+
+body main .main-text .btn {
+  padding: 14px 100px;
+  margin: 50px 0 0 150px;
+}
+
+body main .main-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+  height: 35em;
+}
+/*# sourceMappingURL=style.css.map */
